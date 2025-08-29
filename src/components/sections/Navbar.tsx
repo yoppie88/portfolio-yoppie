@@ -34,7 +34,12 @@ const Navbar = () => {
 
   return (
     <motion.header
-      style={{ background, backdropFilter: backdropBlur, boxShadow, zIndex: 50 }}
+      style={{
+        background,
+        backdropFilter: backdropBlur,
+        boxShadow,
+        zIndex: 50,
+      }}
       className='fixed top-0 w-full'
     >
       <div className='custom-container flex-between h-16 md:h-21'>
@@ -74,9 +79,9 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Mobile pill (Edwin + hamburger) */}
+      {/* Mobile pill (Yoppie + hamburger) */}
       <div className='absolute left-1/2 -translate-x-1/2 top-4 flex h-12 w-[361px] max-w-[calc(100%-32px)] items-center justify-between rounded-full bg-black/20 px-4 backdrop-blur-[20px] md:hidden'>
-        <span className='text-white font-semibold'>Edwin</span>
+        <span className='text-white font-semibold'>Yoppie</span>
         <Sheet>
           <SheetTrigger asChild>
             <Menu className='cursor-pointer' />
@@ -87,7 +92,7 @@ const Navbar = () => {
             className='absolute left-1/2 top-[19px] z-[60] h-[812px] w-[361px] -translate-x-1/2 rounded-2xl bg-black/20 p-4 backdrop-blur-[20px]'
           >
             <div className='mb-4 mt-2'>
-              <span className='text-white text-lg font-semibold'>Edwin</span>
+              <span className='text-white text-lg font-semibold'>Yoppie</span>
             </div>
             <nav>
               <ul className='mt-1 flex flex-col gap-4'>
